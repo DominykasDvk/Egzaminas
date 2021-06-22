@@ -1,0 +1,134 @@
+body{
+    margin: 0 auto;
+    width: 90%;
+    background-color: #f8f8f8;
+    font-family: 'Exo', sans-serif;
+}
+
+.flexblock{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.flexbox{
+    border-radius: 2px;
+    margin: 10px;
+    background-color: white;
+    width: 400px;
+    padding: 5px;
+    box-shadow: -1px 17px 19px -8px rgba(0,0,0,0.56);
+    -webkit-box-shadow: -1px 17px 19px -8px rgba(0,0,0,0.56);
+    -moz-box-shadow: -1px 17px 19px -8px rgba(0,0,0,0.56);
+}
+
+.flexbox img{
+    width: 400px;
+}
+
+p{
+    color: #697070;
+}
+
+.logo{
+    height: 60px;
+    margin: 20px;
+}
+
+.boxlogo{
+    box-shadow: 5px 5px 2px grey;
+}
+
+.fa-comment{
+    color: #6eb92b;
+    float: right;
+}
+
+.hr{
+    border-top: 1px solid black;
+}
+
+
+form input {    
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    height: 32px;
+    border-radius: 4px;
+    border: 2px solid #bebebe;
+    background-color: #fff;
+    outline:none;
+    width: 450px;
+}       
+   
+label{           
+    font-size: 25px;
+    display: block;           
+}
+   
+button{
+    display: flex;
+    flex-flow: wrap;
+    border-radius: 5px;
+    background-color: #6eb92b;
+    color: #ffffff;
+    font-size: 15px;           
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;  
+    margin-bottom: 10px;         
+}
+
+a{
+    text-decoration: none;
+    color: #6eb92b;
+}
+
+.header{
+    color: #ffffff;
+    
+}
+
+.info h1{
+    color: #2c3e50;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.stars {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    float: left;
+}
+.stars input{
+    display: none;
+}
+.fa-star{
+    color: #ccc3c3;
+    transition: all .2s ease;
+}
+.stars input:not(:checked) ~ label:hover,
+.stars input:not(:checked) ~ label:hover ~ label{
+    color: #5cb85c;
+}
+.stars input:checked ~ label{
+    color: #5cb85c;
+}
+.stars input#rate-5:checked ~ label{
+    color: #5cb85c;
+    text-shadow: 0 0 1.5px #952;
+}
+
+footer{
+    font-size: 15px;
+    margin: 10px 20px;
+    font-weight: 600;
+}
+
+.visually-hidden{
+    display: none;
+    background-color: #6eb92b;
+}
